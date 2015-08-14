@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+  <title>monomyth io</title>
+  <script src="js/jquery.min.js" type="text/javascript"></script>
+  <script src="js/day_spans.js" type="text/javascript"></script>
+  <script src="js/gradient_manager.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    $(function () {
+        startGradientManager();
+    });
+  </script>
+  <style>
+    html
+    {
+      font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      height:100%;
+    }
+    body
+    {
+      height:100%;
+      background-color:black;
+    }
+    .logo
+    {
+      font-size:2.5em;
+    }
+    .monomyth
+    {
+      color:white;
+    }
+    .io
+    {
+      color:#bcbcbc;
+    }
+    .footer
+    {
+      background-image:url(img/grayscale-65.png);
+    }
+    .push
+    {
+      background-color:blue;
+    }
+    * {
+      margin: 0;
+    }
+    .wrapper {
+      min-height: 100%;
+      height: auto !important;
+      height: 100%;
+      margin: 0 auto -60px; /* the bottom margin is the negative value of the footer's height */
+    }
+    .footer, .push {
+      height: 60px; /* .push must be the same height as .footer */
+    }
+    .logo-container
+    {
+      padding-left:15px;
+      padding-top:5px;
+    }
+  </style>
+</head>
+<body id="bg">
+<div class="wrapper">
+</div>
+<div class="footer">
+  <div class="logo-container">
+    <span class="logo monomyth">monomyth</span>&nbsp;<span class="logo io">io</span>
+  </div>
+</div>
+</body>
+</html>
